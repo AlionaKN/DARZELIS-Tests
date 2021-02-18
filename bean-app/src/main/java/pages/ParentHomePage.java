@@ -21,6 +21,9 @@ public class ParentHomePage extends AbstractPage {
 	@FindBy (id = "childForm")
 	public WebElement buttonChildForm;
 	
+	@FindBy (id = "mainRegForm")
+	public WebElement buttonRegisterToKindergartenForm;
+	
 	public ParentHomePage(WebDriver driver) {
 		super(driver);
 	}
@@ -39,5 +42,7 @@ public class ParentHomePage extends AbstractPage {
 	public void clickButtonChildForm() {
 		buttonChildForm.click();
 	}
-	
+	public void clickButtonRegisterToKindergartenForm() {
+		buttonRegisterToKindergartenForm.click();
+	}
 }

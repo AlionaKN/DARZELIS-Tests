@@ -15,12 +15,12 @@ import pages.AdminUserListPage;
 import pages.ParentHomePage;
 import pages.LoginPage;
 
-public class AdminEditUserDetails extends BaseTest {
+public class TestAdminEditUserDetails extends BaseTest {
 	private AdminUserListPage adminUserList = new AdminUserListPage(driver);
 	private AdminEditUserPage adminEditUser = new AdminEditUserPage(driver);
 	private LoginPage loginPage = new LoginPage(driver);
 	private ParentHomePage parentHomePage = new ParentHomePage(driver);
-	private ParentRegistration parentRegistration = new ParentRegistration();
+	private TestParentRegistration parentRegistration = new TestParentRegistration();
 	String updatedName = "updated" + parentRegistration.userName;
 	String updatedEmail = "updated" + parentRegistration.userEmail;
 	@Test

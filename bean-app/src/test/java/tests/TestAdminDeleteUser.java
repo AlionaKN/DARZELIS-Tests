@@ -1,4 +1,4 @@
-package tests;
+ package tests;
 
 import java.io.IOException;
 import java.util.List;
@@ -14,9 +14,9 @@ import basetest.BaseTest;
 import pages.AdminUserListPage;
 
 
-public class AdminDeleteUser extends BaseTest{
+public class TestAdminDeleteUser extends BaseTest{
 	private AdminUserListPage adminUserList = new AdminUserListPage(driver);
-	private ParentRegistration parentRegistration = new ParentRegistration();
+	private TestParentRegistration parentRegistration = new TestParentRegistration();
 	
 	@Test
 	public void successfulUserDeletionByAdmin () throws IOException {

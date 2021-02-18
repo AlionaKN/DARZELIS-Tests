@@ -1,8 +1,8 @@
 eclipse.preferences.version=1
 encoding//src/main/java/pages/AdminUserListPage.java=UTF-8
 encoding//src/main/java/pages/EduKindergartenListPage.java=UTF-8
-encoding//src/test/java/tests/AdminEditUserDetails.java=UTF-8
-encoding//src/test/java/tests/EduLogin.java=UTF-8
-encoding//src/test/java/tests/EduRegistration.java=UTF-8
-encoding//src/test/java/tests/ParentLogin.java=UTF-8
-encoding//src/test/java/tests/ParentRegistration.java=UTF-8
+encoding//src/test/java/tests/TestAdminEditUserDetails.java=UTF-8
+encoding//src/test/java/tests/TestEduLogin.java=UTF-8
+encoding//src/test/java/tests/TestEduRegistration.java=UTF-8
+encoding//src/test/java/tests/TestParentLogin.java=UTF-8
+encoding//src/test/java/tests/TestParentRegistration.java=UTF-8

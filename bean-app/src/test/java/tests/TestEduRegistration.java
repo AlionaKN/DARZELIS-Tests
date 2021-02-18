@@ -9,28 +9,20 @@ import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
 import basetest.BaseTest;
+import generictest.GenericTestMethods;
 import pages.AdminAddNewUserPage;
 import pages.AdminUserListPage;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class EduRegistration extends BaseTest {
+public class TestEduRegistration extends GenericTestMethods {
 	private AdminUserListPage adminUserList = new AdminUserListPage(driver);
 	private AdminAddNewUserPage addNewUser = new AdminAddNewUserPage(driver);
-	public String userName = "Testas";
-	public String userEmail = "test_" + new Random().nextInt(1000) + "@gmail.com";
+
 
 	@Test
 	public void successfulEduRegistrationByAdmin() {
 
-//		driver.get("http://akademijait.vtmc.lt:8181/bean-app/admin/pradzia");
-//		addNewUser.clickLinkUserList();
-		driver.get("http://akademijait.vtmc.lt:8181/bean-app/admin/vartotojai");
-		adminUserList.clickbuttonAddNewUser();
-		addNewUser.inputFirstName(userName);
-		addNewUser.inputLastName(userName);
-		addNewUser.inputEmail(userEmail);
-		addNewUser.selectRole(2);
-		addNewUser.clickbuttonRegister();
+		registerEdu();
 		String successText = addNewUser.getSuccessText();
 		assertEquals("No success message located", "Registracija sėkminga.", successText);
 
