@@ -9,6 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BaseTest {
 	protected static WebDriver driver;
 
+	/**
+	 * This is a base test with setup and closing methods
+	 */
+
 	@BeforeClass
 	public static void setUp() {
 		System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
@@ -16,14 +20,14 @@ public class BaseTest {
 		driver.manage().window().maximize();
 	}
 
-//	@Before
-//	public void openHomePage() {
-//		driver.get("https://demo.opencart.com/");
-//	}
+	@Before
+	public void openHomePage() {
+		driver.get("http://akademijait.vtmc.lt:8181/bean-app");
+	}
 
-//	@AfterClass
-//	public static void tearDown() {
-//		driver.manage().deleteAllCookies();
-//		driver.close();
-//	}
+	@AfterClass
+	public static void tearDown() {
+		driver.manage().deleteAllCookies();
+		driver.close();
+	}
 }
